@@ -115,9 +115,9 @@ fload ${BP}/ofw/fs/dropinfs.fth
 devalias rom     /dropin-fs
 
 \ XXX should check QEMU -nographic option
-\ for now, comment out the two following lines for graphic boot
-\ " com1"  ' output-device  set-config-string-default
-\ " com1"  ' input-device   set-config-string-default
+\ for now, comment out the two following lines for graphic boot, uncomment for serial mode
+" com1"  ' output-device  set-config-string-default
+" com1"  ' input-device   set-config-string-default
 
 
 install-rom-cold
