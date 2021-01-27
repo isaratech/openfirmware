@@ -102,7 +102,7 @@ headerless
 h# 6000.0000 value fw-virt-base			\ 32 megs of mapping space
 h# 0200.0000 value fw-virt-size
 
-0 value memsize
+h# 8000.0000 value memsize				\ Hardcoding memsize to 2GiB
 headers
 
 fload ${BP}/cpu/ppc/loadvmem.fth		\ /mmu node

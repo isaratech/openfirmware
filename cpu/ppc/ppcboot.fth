@@ -291,7 +291,7 @@ ascii J ?report
 \ Top of memory and dictionary limit
    add   r0,r11,r13		\ Compute memtop
    'user memtop  stw  r0,*
-   'user memsize stw  r12,*
+\   'user memsize stw  r12,*	\ This line is commented as we use the hard-coded memsize from prep/build/prepfw.fth
 
 \ Set the up0 user variable
    'user up0  stw  up,*
